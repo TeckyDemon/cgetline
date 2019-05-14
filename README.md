@@ -28,7 +28,7 @@ make
 cd ..
 ```
 
-Move the file **getline.a** to your project directory and add `-lgetline` to the linker flags.
+Move the file **getline.o** to your project directory and compile it with other files.
 
 ## Documentation
 
