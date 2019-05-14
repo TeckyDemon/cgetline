@@ -8,8 +8,8 @@
 - [Prerequisites](#prerequisites)
   - [Windows](#windows)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Example program](#example-program)
+- [Documentation](#documentation)
+  - [Methods](#methods)
 - [Authors](#authors)
 - [License](#license)
 
@@ -28,35 +28,15 @@ make
 cd ..
 ```
 
-## Usage
+Move the file **getline.a** to your project directory and add `-lgetline` to the linker flags.
 
-Move the file **getline.a** to your project directory.
+## Documentation
 
-Add library to the linker by adding:
+### Methods
 
-`-lgetline`
-
-and
-
-`-L.`
-
-if needed.
-
-## Example program
-
-```
-#include <stdio.h>
-#include "getline.h"
-
-int main(){
-	FILE* input_file=fopen("test","r");
-	char* line;
-	while(getline(input_file,&line)!=NULL){
-		printf("%s\n",line);
-	}
-	fclose(input_file);
-}
-```
+| Method                                                 | Description |
+| :---                                                   | :---        |
+| char* getline(FILE* input_file,char** output_variable) | Returns next line from the **input_file** where **output_variable** is also the pointer to the returned value. |
 
 ## Authors
 
