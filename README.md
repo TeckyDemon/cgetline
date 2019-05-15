@@ -34,9 +34,10 @@ Move the file **getline.o** to your project directory and compile it with other 
 
 ### Methods
 
-| Method                                                 | Description |
-| :---                                                   | :---        |
-| char* getline(FILE* input_file,char** output_variable) | Returns next line from the **input_file** where **output_variable** is also the pointer to the returned value. |
+| Method                                                  | Description                                                                                                                    |
+| :---                                                    | :---                                                                                                                            |
+| char* getline(FILE* input_file,char** output_variable)  | Returns next line from the **input_file** where **output_variable** is also the pointer to the returned value. |
+| char* cgetline(FILE* input_file,char** output_variable) | Synonymous with **getline(input_file,output_variable)**.                                                                        |
 
 ## Authors
 
