@@ -28,9 +28,9 @@ make
 cd ..
 ```
 
-* Move **getline.h** and **getline.o** to your project directory
-* Add `#include "getline.h"` to your source files
-* Compile **getline.o** file with other files e.g. `gcc main.c getline.o`
+* Move **cgetline** to your project directory
+* Add `#include "cgetline/getline.h"` to your source files
+* Compile **getline.o** file with other files e.g. `gcc main.c cgetline/getline.o`
 
 ## Documentation
 
