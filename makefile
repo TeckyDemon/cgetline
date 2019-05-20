@@ -4,5 +4,3 @@ CFLAGS=-std=c99 -O3 -s -pipe -Werror -Wall -Wextra -Wundef -Wshadow -Wconversion
 all: getline.o
 %.o: %.c
 	$(CC) -c $? -o $@ $(CFLAGS)
-debug: CFLAGS+=-fsanitize=address
-debug: all
