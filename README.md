@@ -24,9 +24,7 @@ Install **make** and **mingw**.
 
 ```
 git clone "https://github.com/DeBos99/cgetline.git"
-cd cgetline
-make
-cd ..
+make -C cgetline
 ```
 
 * Move **cgetline** to your project directory
