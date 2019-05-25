@@ -1,5 +1,7 @@
 # CGetline
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 **CGetline** is a cross-platform getline function for C.
 
 ## Content
