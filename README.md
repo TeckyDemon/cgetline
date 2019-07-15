@@ -24,27 +24,71 @@
 ## Content
 
 - [Content](#content)
-- [Prerequisites](#prerequisites)
-  - [Windows](#windows)
 - [Installation](#installation)
+  - [Windows](#windows)
+  - [Unix](#unix)
+    - [Debian/Ubuntu](#apt)
+    - [Arch Linux/Manjaro](#pacman)
+    - [CentOS](#yum)
+    - [MacOS](#homebrew)
+- [Usage](#usage)
 - [Documentation](#documentation)
   - [Methods](#methods)
 - [Authors](#authors)
 - [Contact](#contact)
 - [License](#license)
 
-## Prerequisites
+## Installation
 
 ### Windows
 
-Install **make** and **mingw**.
-
-## Installation
-
+* Install [Make](http://gnuwin32.sourceforge.net/packages/make.htm).
+* Install [MinGW](https://sourceforge.net/projects/mingw-w64/files/latest/download).
+* Run following command in the terminal:
 ```
 git clone "https://github.com/DeBos99/cgetline.git"
 make -C cgetline
 ```
+
+### Unix
+
+#### <a name="APT">Debian/Ubuntu based
+
+* Run following commands in the terminal:
+```
+sudo apt install git gcc -y
+git clone "https://github.com/DeBos99/cgetline.git"
+make -C cgetline
+```
+
+#### <a name="Pacman">Arch Linux/Manjaro
+
+* Run following commands in the terminal:
+```
+sudo pacman -S git gcc --noconfirm
+git clone "https://github.com/DeBos99/cgetline.git"
+make -C cgetline
+```
+
+#### <a name="YUM">CentOS
+
+* Run following commands in the terminal:
+```
+sudo yum install git gcc -y
+git clone "https://github.com/DeBos99/cgetline.git"
+make -C cgetline
+```
+
+#### <a name="Homebrew">MacOS
+
+* Run following commands in the terminal:
+```
+brew install git gcc
+git clone "https://github.com/DeBos99/cgetline.git"
+make -C cgetline
+```
+
+## Usage
 
 * Move **cgetline** to your project directory
 * Add `#include "cgetline/getline.h"` to your source files
@@ -54,10 +98,10 @@ make -C cgetline
 
 ### Methods
 
-| Method                                                  | Description                                                                                                                    |
-| :---                                                    | :---                                                                                                                            |
+| Method                                                  | Description                                                                                                    |
+| :------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------- |
 | char* getline(FILE* input_file,char** output_variable)  | Returns next line from the **input_file** where **output_variable** is also the pointer to the returned value. |
-| char* cgetline(FILE* input_file,char** output_variable) | Synonymous with **getline(input_file,output_variable)**.                                                                        |
+| char* cgetline(FILE* input_file,char** output_variable) | Synonymous with **getline(input_file,output_variable)**.                                                       |
 
 ## Authors
 
