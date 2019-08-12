@@ -1,7 +1,1 @@
-*
-!.gitignore
-!getline.c
-!getline.h
-!LICENSE
-!makefile
-!README.md
+*.a
